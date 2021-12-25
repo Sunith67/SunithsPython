@@ -6,6 +6,11 @@ from tkinter import *
 
 
 def CalCu_lator():
+
+    engine.say("OK, so you have choosen Calculator ")
+    engine.say("A screen of Calculator will pop up")
+    engine.runAndWait()
+
     def iCalc(source, side):
         storeObj = Frame(source, borderwidth=4, bd=4, bg="powder blue")
         storeObj.pack(side=side, expand=YES, fill=BOTH)
@@ -265,3 +270,4 @@ elif Stranger_Choose == "d":
     Digi_clock()
 else:
     print("wrong input")
+
